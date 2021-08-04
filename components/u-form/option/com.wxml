@@ -1,0 +1,13 @@
+<!--components/u-form/option/com.wxml-->
+<view class="con flex justify-space-between" style="margin-top:{{spacing ? 20:0}}rpx;">
+  <view style="min-height:100rpx;" class="flex column justify-center">
+    <view class="flex">
+      <view style="color: var(--text-color-content); font-size:var(--text-size-content);">{{name}}</view>
+      <view wx:if="{{require}}" class="dot"></view>
+    </view>
+    <view style="color: var(--text-color-description); font-size:var(--text-size-description);">{{desc}}</view>
+  </view>
+  <view class="flex justify-center align-center" style="margin-left:10rpx; min-height:100rpx;">
+    <slot></slot>
+  </view>
+</view>

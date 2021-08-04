@@ -1,0 +1,6 @@
+<!--components/u-form/number/com.wxml-->
+<view class="{{dense ? 'con-dense':'con'}} {{warn || error ? 'con-error':''}} {{disable ? 'con-disable':''}} flex justify-center align-center">
+  <view class="con-view" wx:if="{{!input}}" bindtap="{{disable ? '_none':'_onTap'}}">{{value}}</view>
+  <input value="{{value}}" class="con-input" wx:else focus="{{!disable}}" maxlength="20" cursor-spacing="20" type="number" confirm-type="done" bindblur="_onLoseFocus" bindinput="{{disable ? '_none':'_onInput'}}"/>
+  <text wx:if="{{unit}}" class="unit">{{unit}}</text>
+</view>

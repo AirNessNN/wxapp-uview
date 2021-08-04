@@ -1,0 +1,7 @@
+/* components/u-form/option/com.wxss */
+@import "/components/base-style.wxss";
+
+.con{
+  width: 100%;
+  min-height: 100rpx;
+}

@@ -1,0 +1,9 @@
+<!--components/u-button/com.wxml-->
+<view 
+  bindtap="{{disable ? '_none':'_tap'}}"
+  class="btn{{large ? '-large':''}}{{xLarge ? '-x-large':''}}{{small ? '-small':''}} {{text ? 'text':''}} {{block? 'block':''}} {{shadow ? 'shadow':''}} flex justify-center align-center  {{loading || disable ? 'filter-disable':''}}" 
+  hover-class="{{disable || loading ? '': text ? 'text-hover':'filter-hover'}}"
+  style="{{color && !text ? 'color:' + color + ';':''}} {{background && !text ? 'background-color:' + background + ';':''}} {{round ?'border-radius:' + borderRadius + 'rpx;':''}} {{style}}">
+  <u-loading wx:if="{{loading}}" color="{{text? 'var(--primary)':'white'}}" large="{{large || xLarge}}"></u-loading>
+  <slot wx:if="{{!loading}}"></slot>
+</view>

@@ -1,0 +1,6 @@
+<!--components/u-form/number-range/com.wxml-->
+<view class="flex justify-center align-center">
+  <number unit="{{unit}}" dense="{{dense}}" disable="{{disable}}" bindvalue="_onMinValue" min="{{min}}" max="{{max}}" warn="{{error}}" value="{{minValue}}"></number>
+  <view style="margin: 0 10rpx; color: var(--text-color-content); display:block;">~</view>
+  <number unit="{{unit}}" dense="{{dense}}" disable="{{disable}}" bindvalue="_onMaxValue" min="{{min}}" max="{{max}}" warn="{{error}}" value="{{maxValue}}"></number>
+</view>

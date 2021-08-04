@@ -1,0 +1,23 @@
+<!--components/u-form/selection/com.wxml-->
+<view class="item-group">
+  <view 
+    wx:for="{{items}}" 
+    style="{{index == items.length - 1 ? 'margin-bottom: 0;':''}}" 
+    wx:key="unique" 
+    wx:for-item="item" 
+    wx:for-index="index" 
+    class="item{{item.select || (multiple && item.require) ? '-selected':''}} flex column justify-center align-start" 
+    data-index="{{index}}" 
+    hover-class="{{multiple && item.require ? 'item-require-hover': item.select ? 'item-selected-hover':'item-hover'}}"
+    hover-stay-time="500"
+    bindtap="{{(multiple && item.require) ? '_none':'_onSelect'}}">
+    <view class="item-name-{{item.select || (multiple && item.require) ? 'active':'normal'}} flex">
+      <view>{{item.name}}</view>
+      <view wx:if="{{multiple && item.require}}" class="dot"></view>
+    </view>
+    <view 
+      style="color: black;" 
+      class="item-desc{{item.select == null && (multiple && item.require) == null ? '': (item.select || (multiple && item.require) ? '-show':'-hide')}}"
+      style="">{{item.desc}}</view>
+  </view>
+</view>

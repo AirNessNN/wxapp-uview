@@ -1,0 +1,9 @@
+/* pages/test/index.wxss */
+.base, .flex{
+  margin: 20rpx 30rpx;
+}
+
+.flex{
+  display: flex;
+  flex-flow: row nowrap;
+}

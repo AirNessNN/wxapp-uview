@@ -1,0 +1,150 @@
+/* components/u-switch/com.wxss */
+@import '/components/base-style.wxss';
+@keyframes init-open{
+  from{
+    transform: scale(2);
+    border: 10rpx solid var(--switch-open);
+    background: var(--switch-open);
+    opacity: 0;
+  }
+  to{
+    transform: scale(1);
+    border: 10rpx solid var(--switch-open);
+    background: var(--switch-open);
+    opacity: 1;
+  }
+}
+
+@keyframes init-close{
+  from{
+    transform: scale(2);
+    border: 10rpx solid var(--switch-close);
+    opacity: 0;
+  }
+  to{
+    transform: scale(1);
+    border: 10rpx solid var(--switch-close);
+    opacity: 1;
+  }
+}
+
+@keyframes swicth-to-close{
+  0%{
+    transform: scale(1);
+    border: 20rpx solid var(--switch-open);
+    background: var(--switch-open);
+    opacity: 1;
+  }
+  25%{
+    transform: scale(2);
+    border: 20rpx solid var(--switch-open);
+    background: var(--switch-open);
+    opacity: 0;
+  }
+  25.1%{
+    transform: scale(2);
+    border: 20rpx solid var(--switch-close);
+    background: none;
+    opacity: 0;
+  }
+  50%{
+    transform: scale(0.8);
+    border: 10rpx solid var(--switch-close);
+    opacity: 1;
+  }
+  100%{
+    transform: scale(1);
+    border: 10rpx solid var(--switch-close);
+    opacity: 1;
+  }
+}
+
+@keyframes swicth-to-open{
+  0%{
+    transform: scale(1);
+    border: 10rpx solid var(--switch-close);
+    background: none;
+    opacity: 1;
+  }
+  25%{
+    transform: scale(2);
+    border: 10rpx solid var(--switch-close);
+    background: none;
+    opacity: 0;
+  }
+  25.1%{
+    transform: scale(2);
+    border: 10rpx solid var(--switch-open);
+    background: var(--switch-open);
+    opacity: 0;
+  }
+  50%{
+    transform: scale(0.8);
+    border: 10rpx solid var(--switch-open);
+    background: var(--switch-open);
+    opacity: 1;
+  }
+  100%{
+    transform: scale(1);
+    border: 10rpx solid var(--switch-open);
+    background: var(--switch-open);
+    opacity: 1;
+  }
+}
+
+
+
+.init-open, .init-close, .switch-open, .switch-close{
+  width: 60rpx;
+  height: 60rpx;
+  box-sizing: border-box;
+  transform: scale(2);
+  opacity: 0;
+  border-radius: 50%;
+  border: 10rpx solid var(--switch-open);
+  animation-fill-mode: forwards;
+}
+
+.init-open{
+  animation: init-open 0.5s ease 0.5s forwards;
+}
+
+.init-close{
+  animation: init-close 0.5s ease 0.5s forwards;
+}
+
+.switch-open{
+  animation: swicth-to-open 1s ease forwards;
+}
+
+.switch-close{
+  animation: swicth-to-close 1s ease forwards;
+}
+
+.open-hover{
+  border: 10rpx solid #b4570f;
+}
+
+.disabl-open {
+  width: 60rpx;
+  height: 60rpx;
+  opacity: 1;
+  transform: scale(1);
+  box-sizing: border-box;
+  border-radius: 50%;
+  animation:  none;
+  background: var(--disable);
+  border: 10rpx solid var(--disable);
+}
+
+.disabl-close {
+  width: 60rpx;
+  height: 60rpx;
+  opacity: 1;
+  transform: scale(1);
+  box-sizing: border-box;
+  border-radius: 50%;
+  animation:  none;
+  background: none;
+  border: 10rpx solid var(--disable);
+}

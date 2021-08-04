@@ -1,0 +1,86 @@
+<!--pages/test/index.wxml-->
+<view class="flex">
+  <u-btn>按钮</u-btn>
+  <u-btn loading>加载按钮</u-btn>
+  <u-btn disable>按钮不可用</u-btn>
+</view>
+
+<view class="base">
+  <u-btn small>小尺寸</u-btn>
+  <u-btn>常规</u-btn>
+  <u-btn large>大尺寸</u-btn>
+  <u-btn x-large>超大尺寸</u-btn>
+</view>
+
+<view class="base">
+  <u-btn block>块状按钮</u-btn>
+  <u-btn text>文字按钮</u-btn>
+  文字按钮加载
+  <u-btn text loading>文字按钮加载</u-btn>
+  <u-btn round>圆角按钮</u-btn>
+  <u-btn round shadow style="margin-top:20rpx;" bindtap="onTap">带阴影的按钮</u-btn>
+  <u-btn style="margin-top:20rpx;" to="/pages/index/index">快捷导航</u-btn>
+</view>
+
+<u-card spacing="{{true}}">
+  <u-card-title title="基础卡片"></u-card-title>
+  <u-card-content>
+    <u-form-option name="基础单行内容" desc="组件描述" dot="{{true}}">
+    </u-form-option>
+
+    <u-form-option name="基础单行内容" desc="组件描述" dot="{{true}}">
+      <view>可自定义的功能区</view>
+    </u-form-option>
+
+    <u-form-option name="开关" desc="{{switchValue ? '开':'关'}}">
+      <u-switch model:value="{{switchValue}}"></u-switch>
+    </u-form-option>
+
+    <u-form-option name="开关（不可用）" desc="测试开关">
+      <u-switch disable model:value="{{switchValue}}"></u-switch>
+    </u-form-option>
+
+    <u-form-option name="数字范围选框" desc="{{inputValue}}">
+      <u-form-number-range dense  max="{{2000}}" min="{{0}}" bindinput="onInput" minValue="{{numberRange.min}}" maxValue="{{numberRange.max}}"></u-form-number-range>
+    </u-form-option>
+
+    <u-form-option name="数字范围选框" desc="{{inputValue}}">
+      <u-form-number-range dense  max="{{2000}}" min="{{0}}" bindinput="onInput"></u-form-number-range>
+    </u-form-option>
+
+    <u-form-option name="数字范围选框(不可用)" desc="">
+      <u-form-number-range disable max="{{2000}}" min="{{0}}" bindinput="onInput"></u-form-number-range>
+    </u-form-option>
+
+    <u-form-option name="数字范围选框(不可用)" desc="">
+      <u-form-number-range unit="￥" disable max="{{2000}}" min="{{0}}" bindinput="onInput"></u-form-number-range>
+    </u-form-option>
+
+    <u-form-option name="输入组件" desc="{{inputValue2}}">
+      <u-form-input model:value="{{inputValue2}}"></u-form-input>
+    </u-form-option>
+
+    <u-form-option name="输入组件 (不可用)" desc="{{inputValue2}}">
+      <u-form-input disable model:value="{{'测试测试'}}"></u-form-input>
+    </u-form-option>
+
+  </u-card-content>
+</u-card>
+
+<u-card>
+  <u-card-title icon="/images/icon-rank-1.png" title="拓展卡片设置"></u-card-title>
+  <u-card-content>
+    <u-form-option name="多选开关" desc="" spacing="{{false}}">
+      <u-switch bindclick="onTap" model:value="{{multiple}}"></u-switch>
+    </u-form-option>
+    
+    <u-form-option name="卡片选择器" desc="多选单选测试 多选模式下的必选项"></u-form-option>
+    <u-form-selection items="{{selections}}" multiple="{{multiple}}" bind-on-change="onChange">
+    </u-form-selection>
+
+    <u-form-option name="卡片选择器" desc="必选 多选 初始化多选">
+    </u-form-option>
+    <u-form-selection require items="{{selections2}}" multiple bind-on-change="onChange">
+    </u-form-selection>
+  </u-card-content>
+</u-card>

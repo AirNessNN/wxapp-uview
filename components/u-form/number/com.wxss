@@ -1,0 +1,43 @@
+/* components/u-form/number/com.wxss */
+@import "/components/base-style.wxss";
+
+.con, .con-dense, .con-disable{
+  width: 135rpx;
+  height: 58rpx;
+  line-height: 58rpx;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+  font-size: var(--text-size-content);
+  background-color: var(--background);
+  color: var(--text-color-content);
+  border: 1px solid var(--background);
+  transition: all linear 0.3s;
+}
+
+.con-disable {
+  color: var(--text-color-disable);
+}
+
+.con-dense {
+  width: 110rpx;
+  margin-top: 0;
+}
+
+.con-error {
+  border: 1px solid var(--error);
+  color: var(--error);
+  transition: all linear 0.3s;
+}
+.con-view, .con-input {
+  box-sizing: border-box;
+  width: inherit;
+  height: 100%;
+  line-height: inherit;
+  text-align: center;
+}
+
+.unit {
+  display: block;
+  margin: 0 10rpx;
+  color: var(--text-color-description);
+}

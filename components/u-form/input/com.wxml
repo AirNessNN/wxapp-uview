@@ -1,0 +1,16 @@
+<!--components/u-form/input/com.wxml-->
+<view class="input-con">
+  <view class="input {{disable ? 'disable':''}}" wx:if="{{!input}}" bindtap="{{disable ? '_none':'_tap'}}" style="{{value == '' ? 'color: var(--text-color-description);':''}}">{{value == '' ? placeholder:value}}</view>
+  <input 
+    class="input" 
+    wx:else 
+    value="{{value}}"
+    focus="{{!disable}}" 
+    cursor-spacing="20" 
+    type="{{type}}" 
+    confirm-type="done" 
+    bindblur="_onBlur" 
+    bindinput="{{disable ? '_none':'_input'}}" 
+    placeholder="{{placeholder}}" 
+    placeholder-style="color: var(--text-color-description);"/>
+</view>

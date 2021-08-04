@@ -1,0 +1,13 @@
+<!--components/u-card-title/com.wxml-->
+<view>
+  <view class="flex justify-space-between align-center title-con">
+    <view class="flex align-center">
+      <image class="ico" mode="aspectFit" wx:if="{{!fontIcon && icon != null}}" src="{{icon}}"></image>
+      <text wx:if="{{fontIcon && icon != null}}" class="{{icon}}"></text>
+      <view style="color: {{color}}" class="title-text"><text>{{title}}</text></view>
+    </view>
+    <slot wx:if="{{desc == null}}"></slot>
+    <view wx:else style="color: var(--contents)" class="title-desc">null</view>
+  </view>
+  
+</view>

@@ -1,0 +1,6 @@
+<!--components/u-switch/com.wxml-->
+<view bindtap="{{disable ? '_none':'_tap'}}" style="padding:{{pd}}rpx">
+  <view
+  style="animation-fill-mode: forwards; width:{{size}}rpx; height:{{size}}rpx;" 
+  class="{{firstStart ? (value?'init-open':'init-close'):(value?'switch-open':'switch-close')}} {{disable ? value ? 'disabl-open':'disabl-close':''}}"></view>
+</view>

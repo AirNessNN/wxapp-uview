@@ -1,0 +1,2 @@
+<!--components/u-loading/com.wxml-->
+<view class="spinner {{large ? 'large':''}}" style="background-color: {{color}};"></view>

@@ -1,0 +1,26 @@
+/* components/u-card-title/com.wxss */
+@import "../base-style.wxss";
+
+
+.title-con{
+  width: 100%;
+  height: 92rpx;
+  box-sizing: border-box;
+  padding: 20rpx;
+}
+
+.title-text{
+  font-size: 31rpx;
+  font-weight: 900;
+}
+
+.title-desc{
+  font-size: 24rpx;
+}
+
+
+.ico{
+  width: 30rpx;
+  height: 30rpx;
+  margin-right:10rpx;
+}

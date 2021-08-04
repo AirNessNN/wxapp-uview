@@ -1,0 +1,19 @@
+
+.dot{
+  width: 10rpx;
+  height: 10rpx;
+  border-radius: 5rpx;
+  margin-top: 5rpx;
+  margin-left: 5rpx;
+  background-color: rgba(252, 40, 25, 100);
+}
+
+
+.filter-hover{
+  filter: brightness(0.85);
+  transition: all 0.3s linear;
+}
+
+.filter-disable{
+  opacity: 0.3;
+}

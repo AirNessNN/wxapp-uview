@@ -1,0 +1,3 @@
+/* components/u-form/number-range/com.wxss */
+@import "../../base-style.wxss";
+

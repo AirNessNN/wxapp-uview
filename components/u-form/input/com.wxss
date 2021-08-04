@@ -1,0 +1,21 @@
+/* components/u-form/input/com.wxss */
+@import "../../base-style.wxss";
+
+.input-con{
+  width: 300rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  color: var(--text-color-title);
+  font-size: var(--text-size-content);
+}
+
+.input{
+  width: inherit;
+  height: inherit;
+  line-height: inherit;
+  text-align: right;
+}
+
+.disable {
+  color: var(--text-color-description);
+}

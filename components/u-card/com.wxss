@@ -1,0 +1,7 @@
+/* components/u-card/com.wxss */
+.v-card{
+  width: 690rpx;
+  margin: 0 auto;
+  border-radius: 20rpx;
+  box-shadow: var(--shadow-card);
+}

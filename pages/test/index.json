@@ -1,0 +1,14 @@
+{
+  "usingComponents": {
+    "u-switch": "/components/u-form/switch/com",
+    "u-card": "/components/u-card/com",
+    "u-card-title": "/components/u-card-title/com",
+    "u-card-content": "/components/u-card-content/com",
+    "u-form-option": "/components/u-form/option/com",
+    "u-form-number": "/components/u-form/number/com",
+    "u-form-number-range": "/components/u-form/number-range/com",
+    "u-form-selection": "/components/u-form/selection/com",
+    "u-form-input": "/components/u-form/input/com",
+    "u-btn": "/components/u-button/com"
+  }
+}

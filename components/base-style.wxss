@@ -1,0 +1,43 @@
+page{
+  --primary: #FE9507;
+  --primary-hover: #FE950755;
+  --secondary: #FE9507;
+  --contents: #777777;
+  --tips: #BFBFBF;
+  --border: #a3a3a3;
+  --background-hover: rgba(245, 245, 245, 100);
+  --background: rgba(245, 245, 245, 100);
+  --disable: #dfdfdf;
+  --grey: #a3a3a3;
+  --switch-open: #FE9507;
+  --switch-close: #a3a3a3;
+
+  --color-success: var(--primary);
+  --color-warning: #E6A23C;
+  --color-error: #F56C6C;
+  --color-info: #409EFF;
+
+  --text-color-title: rgba(16, 16, 16, 100);
+  --text-color-content: rgba(119, 119, 119, 100);
+  --text-color-description: rgba(191, 191, 191, 100);
+  --text-color-disable: rgba(191, 191, 191, 100);
+  --text-color-selected: var(--primary);
+
+  --text-size-title: 31rpx;
+  --text-size-content: 28rpx;
+  --text-size-description:22rpx;
+
+  --options-text-selected: rgba(255, 255, 255, 100);
+  --options-text-normal: rgba(255, 255, 255, 100);
+  --options-text-disable: rgba(191, 191, 191, 100);
+  --options-bg-selected: rgba(254, 149, 7, 100);
+  --options-bg-selected-disable: #ffc374;
+  --options-bg-hover: rgba(248, 248, 248, 100);
+
+  --shadow-card: 0 0 10px #00000025;
+  --shadow-btn: var(--shadow-card)
+}
+
+
+@import "./style/flex.wxss";
+@import "./style/style.wxss";
