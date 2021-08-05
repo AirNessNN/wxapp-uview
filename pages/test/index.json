@@ -9,6 +9,7 @@
     "u-form-number-range": "/components/u-form/number-range/com",
     "u-form-selection": "/components/u-form/selection/com",
     "u-form-input": "/components/u-form/input/com",
-    "u-btn": "/components/u-button/com"
+    "u-btn": "/components/u-button/com",
+    "u-icon": "/components/u-icon/com"
   }
 }

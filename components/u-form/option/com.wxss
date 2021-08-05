@@ -4,4 +4,27 @@
 .con{
   width: 100%;
   min-height: 100rpx;
+  position: relative;
 }
+
+.con-bg, .con-bg-hover{
+  position: absolute;
+  width: calc(100% + 40rpx);
+  min-height: inherit;
+  background-color: none;
+  left: -20rpx;
+  border-radius: 10rpx;
+  transition: all 0.3s;
+}
+
+.con-bg-hover {
+  background-color: #00000010
+}
+
+
+.native{
+  color: var(--text-color-content);
+  font-size: var(--text-size-content);
+}
+
+

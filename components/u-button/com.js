@@ -55,7 +55,7 @@ Component({
     to: {
       type: String,
       value: null
-    }
+    },
   },
 
   lifetimes: {

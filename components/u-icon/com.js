@@ -1,32 +1,36 @@
-// components/u-form/option/com.js
+// components/u-icon/com.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-    name: {
+    value: {
       type: String,
-      value: 'option'
+      value: 'icon-a-68-01'
     },
-    desc: {
-      type: String,
-      value: ''
-    },
-    dot: {
+    large: {
       type: Boolean,
       value: false
     },
-    spacing: {
+    xLarge: {
       type: Boolean,
-      value: true
+      value: false
     },
-    to: {
+    small: {
+      type: Boolean,
+      value: false
+    },
+    style: {
       type: String,
       value: null
     },
-    toDesc: {
+    size: {
+      type: Number,
+      value: 45
+    },
+    color: {
       type: String,
-      value: ''
+      value: 'var(--primary)'
     }
   },
 
@@ -34,17 +38,13 @@ Component({
    * 组件的初始数据
    */
   data: {
-
+    value: null
   },
 
   /**
    * 组件的方法列表
    */
   methods: {
-    _tap () {
-      wx.navigateTo({
-        url: this.data.to,
-      })
-    }
+
   }
 })

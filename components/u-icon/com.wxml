@@ -1,0 +1,2 @@
+<!--components/u-icon/com.wxml-->
+<text class="iconfont {{value}}" style="{{size ? 'font-size:' + size + 'rpx;':''}} {{color ? 'color:' + color + ';':''}}"></text>

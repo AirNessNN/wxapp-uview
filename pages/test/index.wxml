@@ -1,4 +1,10 @@
 <!--pages/test/index.wxml-->
+
+<view class="base">
+  <u-icon style="margin: 20rpx;" value="icon-a-47-01"></u-icon>
+  <u-icon style="margin: 10rpx;" value="icon-a-47-01"></u-icon>
+</view>
+ 
 <view class="flex">
   <u-btn>按钮</u-btn>
   <u-btn loading>加载按钮</u-btn>
@@ -28,8 +34,14 @@
     <u-form-option name="基础单行内容" desc="组件描述" dot="{{true}}">
     </u-form-option>
 
+    <u-form-option name="带链接的导航组件" desc="组件描述" dot="{{true}}" toDesc="查看" to="/pages/index/index">
+    </u-form-option>
+
     <u-form-option name="基础单行内容" desc="组件描述" dot="{{true}}">
-      <view>可自定义的功能区</view>
+      <view>
+        测试
+        <text class="iconfont icon-a-41-01" style="color: black;"></text>
+      </view>
     </u-form-option>
 
     <u-form-option name="开关" desc="{{switchValue ? '开':'关'}}">

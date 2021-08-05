@@ -7,3 +7,8 @@
   display: flex;
   flex-flow: row nowrap;
 }
+
+.mg-x-2{
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}

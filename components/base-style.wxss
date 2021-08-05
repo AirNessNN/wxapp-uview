@@ -5,7 +5,7 @@ page{
   --contents: #777777;
   --tips: #BFBFBF;
   --border: #a3a3a3;
-  --background-hover: rgba(245, 245, 245, 100);
+  --background-hover: rgba(245, 245, 245, 10);
   --background: rgba(245, 245, 245, 100);
   --disable: #dfdfdf;
   --grey: #a3a3a3;
@@ -39,5 +39,8 @@ page{
 }
 
 
+
+
 @import "./style/flex.wxss";
 @import "./style/style.wxss";
+@import "./style/icon.wxss";

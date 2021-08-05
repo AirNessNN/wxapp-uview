@@ -1,5 +1,6 @@
 <!--components/u-form/option/com.wxml-->
 <view class="con flex justify-space-between" style="margin-top:{{spacing ? 20:0}}rpx;">
+  <view wx:if="{{to}}" class="con-bg" hover-class="con-bg-hover" bindtap="_tap"></view>
   <view style="min-height:100rpx;" class="flex column justify-center">
     <view class="flex">
       <view style="color: var(--text-color-content); font-size:var(--text-size-content);">{{name}}</view>
@@ -8,6 +9,11 @@
     <view style="color: var(--text-color-description); font-size:var(--text-size-description);">{{desc}}</view>
   </view>
   <view class="flex justify-center align-center" style="margin-left:10rpx; min-height:100rpx;">
-    <slot></slot>
+    <slot wx:if="{{!to}}"></slot>
+    <view wx:else class="native">
+      {{toDesc}}
+      <text class="iconfont icon-a-41-01"></text>
+    </view>
   </view>
+  
 </view>
