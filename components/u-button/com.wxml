@@ -1,9 +1,27 @@
 <!--components/u-button/com.wxml-->
 <view 
+  wx:if="{{!text}}"
+  bindtouchstart="_tapStart"
+  bindtouchend="_tapEnd"
   bindtap="{{disable ? '_none':'_tap'}}"
-  class="btn{{large ? '-large':''}}{{xLarge ? '-x-large':''}}{{small ? '-small':''}} {{text ? 'text':''}} {{block? 'block':''}} {{shadow ? 'shadow':''}} flex justify-center align-center  {{loading || disable ? 'filter-disable':''}}" 
-  hover-class="{{disable || loading ? '': text ? 'text-hover':'filter-hover'}}"
+  class="btn{{large ? '-large':''}}{{xLarge ? '-x-large':''}}{{small ? '-small':''}} {{text ? 'text':''}} {{block? 'block':''}} {{shadow ? 'shadow':''}} {{icon ? 'icon':''}} flex justify-center align-center  {{loading || disable ? 'filter-disable':''}}" 
+  hover-class="{{disable || loading ? '': text ? '':'filter-hover'}}"
   style="{{color && !text ? 'color:' + color + ';':''}} {{background && !text ? 'background-color:' + background + ';':''}} {{round ?'border-radius:' + borderRadius + 'rpx;':''}} {{style}}">
   <u-loading wx:if="{{loading}}" color="{{text? 'var(--primary)':'white'}}" large="{{large || xLarge}}"></u-loading>
+  <view wx:if="{{text || icon}}" class="text-btn-bg" style="background-color: {{(text || icon) && color && touched ? color:'unset'}}"></view>
   <slot wx:if="{{!loading}}"></slot>
 </view>
+
+<view 
+  wx:if="{{text}}"
+  bindtouchstart="_tapStart"
+  bindtouchend="_tapEnd"
+  bindtap="{{disable ? '_none':'_tap'}}"
+  class="btn{{large ? '-large':''}}{{xLarge ? '-x-large':''}}{{small ? '-small':''}} {{text ? 'text':''}} {{block? 'block':''}} {{shadow ? 'shadow':''}} {{icon ? 'icon':''}} flex justify-center align-center  {{loading || disable ? 'filter-disable':''}}" 
+  hover-class="{{disable || loading ? '': text ? '':'filter-hover'}}"
+  style="color:{{color}}; {{background && !text ? 'background-color:' + background + ';':''}} {{round ?'border-radius:' + borderRadius + 'rpx;':''}} {{style}}">
+  <u-loading wx:if="{{loading}}" color="{{text? 'var(--primary)':'white'}}" large="{{large || xLarge}}"></u-loading>
+  <view wx:if="{{text || icon}}" class="text-btn-bg" style="background-color: {{(text || icon) && color && touched ? color:'unset'}}"></view>
+  <slot wx:if="{{!loading}}"></slot>
+</view>
+

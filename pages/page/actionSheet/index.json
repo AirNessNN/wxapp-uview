@@ -10,6 +10,7 @@
     "u-form-selection": "/components/u-form/selection/com",
     "u-form-input": "/components/u-form/input/com",
     "u-btn": "/components/u-button/com",
-    "u-icon": "/components/u-icon/com"
+    "u-icon": "/components/u-icon/com",
+    "u-action-sheet": "/components/u-action-sheet/com"
   }
 }

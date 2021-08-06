@@ -5,3 +5,8 @@
   border-radius: 20rpx;
   box-shadow: var(--shadow-card);
 }
+
+.base {
+  border-radius: 0;
+  box-shadow: unset;
+}

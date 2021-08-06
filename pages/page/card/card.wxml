@@ -1,0 +1,47 @@
+<!--pages/page/card/card.wxml-->
+
+<u-card>
+  <u-card-title title="基础卡片"></u-card-title>
+
+  <u-card-content>
+    基础内容1
+  </u-card-content>
+
+  <u-card-content>
+    基础内容2
+  </u-card-content>
+
+  <u-card-title title="拓展标题">
+    <u-btn small text color="red">更多</u-btn>
+  </u-card-title>
+
+  <u-card-content spacing>
+    带Padding的内容区
+  </u-card-content>
+</u-card>
+
+<u-card shadow="{{false}}">
+  <u-card-title title="无阴影的卡片"></u-card-title>
+  <u-card-content>
+    <u-form-option name="选项1" desc=" {{action}}">
+      <u-btn small bindtap="onTap" data-key="normal">按钮</u-btn>
+    </u-form-option>
+
+    <u-form-option name="选项2">
+      <u-btn small bindtap="onTap" data-key="scroll">按钮</u-btn>
+    </u-form-option>
+  </u-card-content>
+</u-card>
+
+<u-card shadow="{{false}}" style="background:#185fce; border-radius:50rpx;">
+  <u-card-title title="自定义样式的卡片"></u-card-title>
+  <u-card-content>
+    <u-form-option name="选项1" desc=" {{action}}">
+      <u-btn small bindtap="onTap" data-key="normal">按钮</u-btn>
+    </u-form-option>
+
+    <u-form-option name="选项2">
+      <u-btn small bindtap="onTap" data-key="scroll">按钮</u-btn>
+    </u-form-option>
+  </u-card-content>
+</u-card>

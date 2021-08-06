@@ -12,6 +12,10 @@ Component({
       type: Boolean,
       value: false
     },
+    icon: {
+      type: Boolean,
+      value: false
+    },
     text: {
       type: Boolean,
       value: false
@@ -79,6 +83,7 @@ Component({
    */
   data: {
     borderRadius: 35,
+    touched: false
   },
 
   /**
@@ -93,6 +98,16 @@ Component({
       }
       this.triggerEvent('Tap', e.detail)
     },
-    _none () {}
+    _none () {},
+    _tapStart () {
+      this.setData({
+        touched: true
+      })
+    },
+    _tapEnd () {
+      this.setData({
+        touched: false
+      })
+    }
   }
 })

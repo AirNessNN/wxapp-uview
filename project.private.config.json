@@ -1,4 +1,5 @@
 {
+  "setting": {},
   "condition": {
     "plugin": {
       "list": []
@@ -14,6 +15,25 @@
         {
           "name": "测试页面",
           "pathName": "pages/test/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/page/actionSheet/index",
+          "pathName": "pages/page/actionSheet/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/page/button/index",
+          "pathName": "pages/page/button/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/page/card/card",
+          "pathName": "pages/page/card/card",
+          "query": "",
           "scene": null
         }
       ]

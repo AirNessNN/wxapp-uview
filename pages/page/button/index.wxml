@@ -1,0 +1,32 @@
+<!--pages/page/button/index.wxml-->
+<u-card spacing="{{true}}">
+  <u-card-title title="基础按钮"></u-card-title>
+  <u-card-content>
+    <u-btn>按钮</u-btn>
+    <u-btn loading>加载按钮</u-btn>
+    <u-btn disable>按钮不可用</u-btn>
+  </u-card-content>
+  <u-card-content>
+    <u-btn small>小尺寸</u-btn>
+    <u-btn>常规</u-btn>
+    <u-btn large>大尺寸</u-btn>
+    <u-btn x-large>超大尺寸</u-btn>
+  </u-card-content>
+  <u-card-title title="拓展按钮"></u-card-title>
+  
+  <u-card-content>
+    <u-btn block>块状按钮</u-btn>
+    <u-btn text color="red">文字按钮</u-btn>
+    <view class="flex">
+      文字按钮加载
+      <u-btn text loading>文字按钮加载</u-btn>
+    </view>
+    <u-btn round>圆角按钮</u-btn>
+    <u-btn round shadow style="margin-top:20rpx;" bindtap="onTap">带阴影的按钮</u-btn>
+    <u-btn style="margin-top:20rpx;" to="/pages/index/index">快捷导航</u-btn>
+    <u-btn small>小尺寸</u-btn>
+    <u-btn>常规</u-btn>
+    <u-btn large>大尺寸</u-btn>
+    <u-btn x-large>超大尺寸</u-btn>
+  </u-card-content>
+</u-card>

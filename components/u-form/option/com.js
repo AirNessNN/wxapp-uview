@@ -18,7 +18,7 @@ Component({
     },
     spacing: {
       type: Boolean,
-      value: true
+      value: false
     },
     to: {
       type: String,

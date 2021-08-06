@@ -2,7 +2,11 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/test/index"
+    "pages/test/index",
+    "pages/page/button/index",
+    "pages/page/actionSheet/index",
+    "pages/page/form/index",
+    "pages/page/card/card"
   ],
   "window": {
     "backgroundTextStyle": "light",

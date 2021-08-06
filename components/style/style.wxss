@@ -1,4 +1,15 @@
 
+.max-screen {
+  width: 100vw;
+  height: 100vh;
+}
+.mask {
+  background-color: rgba(0, 0, 0, 10);
+  z-index: var(--mask-z-index);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 
 
 .dot{

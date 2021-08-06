@@ -25,7 +25,7 @@ page{
 
   --text-size-title: 31rpx;
   --text-size-content: 28rpx;
-  --text-size-description:22rpx;
+  --text-size-description: 22rpx;
 
   --options-text-selected: rgba(255, 255, 255, 100);
   --options-text-normal: rgba(255, 255, 255, 100);
@@ -35,7 +35,11 @@ page{
   --options-bg-hover: rgba(248, 248, 248, 100);
 
   --shadow-card: 0 0 10px #00000025;
-  --shadow-btn: var(--shadow-card)
+  --shadow-btn: var(--shadow-card);
+
+
+  --mask-z-index: 10;
+  --action-sheet-z-index: 11;
 }
 
 

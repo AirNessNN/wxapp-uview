@@ -1,5 +1,5 @@
 /* components/u-form/option/com.wxss */
-@import "/components/base-style.wxss";
+@import "../../base-style.wxss";
 
 .con{
   width: 100%;

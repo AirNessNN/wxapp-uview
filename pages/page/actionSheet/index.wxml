@@ -1,0 +1,47 @@
+<!--pages/page/actionSheet/index.wxml-->
+<u-card shadow="{{false}}">
+  <u-card-content>
+    <u-form-option name="空白ActionSheet" desc=" {{action}}">
+      <u-btn bindtap="onTap" data-key="normal">点击弹出</u-btn>
+    </u-form-option>
+
+    <u-form-option name="scrollView嵌套">
+      <u-btn small bindtap="onTap" data-key="scroll">点击弹出</u-btn>
+    </u-form-option>
+  </u-card-content>
+</u-card>
+
+<u-action-sheet title="你好" model:show="{{action}}" title-color="black">
+  <u-card shadow="{{false}}" wx:if="{{key == 'normal'}}">
+    <u-card-content>
+      <u-form-option name="测试内部容器 {{action}}">
+        <u-btn >按钮测试</u-btn>
+      </u-form-option>
+    </u-card-content>
+  </u-card>
+
+  <scroll-view wx:if="{{key == 'scroll'}}" scroll-y style="width:100vw; height:100%;">
+    <u-card shadow="{{false}}">
+      <u-card-content>
+        <u-form-option name="空白ActionSheet" desc=" {{action}}">
+          <u-btn bindtap="onTap" data-key="normal">点击弹出</u-btn>
+        </u-form-option>
+
+        <u-form-option name="scrollView嵌套">
+          <u-btn small bindtap="onTap" data-key="scroll">点击弹出</u-btn>
+        </u-form-option>
+      </u-card-content>
+    </u-card>
+    <u-card shadow="{{false}}">
+      <u-card-content>
+        <u-form-option name="空白ActionSheet" desc=" {{action}}">
+          <u-btn bindtap="onTap" data-key="normal">点击弹出</u-btn>
+        </u-form-option>
+
+        <u-form-option name="scrollView嵌套">
+          <u-btn small bindtap="onTap" data-key="scroll">点击弹出</u-btn>
+        </u-form-option>
+      </u-card-content>
+    </u-card>
+  </scroll-view>
+</u-action-sheet>

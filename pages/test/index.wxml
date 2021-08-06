@@ -1,33 +1,5 @@
 <!--pages/test/index.wxml-->
 
-<view class="base">
-  <u-icon style="margin: 20rpx;" value="icon-a-47-01"></u-icon>
-  <u-icon style="margin: 10rpx;" value="icon-a-47-01"></u-icon>
-</view>
- 
-<view class="flex">
-  <u-btn>按钮</u-btn>
-  <u-btn loading>加载按钮</u-btn>
-  <u-btn disable>按钮不可用</u-btn>
-</view>
-
-<view class="base">
-  <u-btn small>小尺寸</u-btn>
-  <u-btn>常规</u-btn>
-  <u-btn large>大尺寸</u-btn>
-  <u-btn x-large>超大尺寸</u-btn>
-</view>
-
-<view class="base">
-  <u-btn block>块状按钮</u-btn>
-  <u-btn text>文字按钮</u-btn>
-  文字按钮加载
-  <u-btn text loading>文字按钮加载</u-btn>
-  <u-btn round>圆角按钮</u-btn>
-  <u-btn round shadow style="margin-top:20rpx;" bindtap="onTap">带阴影的按钮</u-btn>
-  <u-btn style="margin-top:20rpx;" to="/pages/index/index">快捷导航</u-btn>
-</view>
-
 <u-card spacing="{{true}}">
   <u-card-title title="基础卡片"></u-card-title>
   <u-card-content>
@@ -39,7 +11,7 @@
 
     <u-form-option name="基础单行内容" desc="组件描述" dot="{{true}}">
       <view>
-        测试
+        自定义组件嵌套
         <text class="iconfont icon-a-41-01" style="color: black;"></text>
       </view>
     </u-form-option>

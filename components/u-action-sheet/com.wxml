@@ -1,0 +1,15 @@
+<!--components/u-action-sheet/com.wxml-->
+<u-mask bind-mask-tap="_maskTap" value="{{show}}" bindtouchstart="_press" bindtouchend="_release">
+  <view class="con {{value ? 'show': inited ? 'close':''}} {{press ? 'touch':''}}" style="height: {{height}}rpx;">
+    <view wx:if="{{title}}" class="title-bar flex justify-space-between align-center" style="color: {{titleColor}};">
+      <view>{{title}}</view>
+      <u-btn text icon bindtap="_onClose" color="{{titleColor}}">
+        <u-icon value="icon-a-55-01" color="{{titleColor}}"></u-icon>
+      </u-btn>
+    </view>
+    <view style="height: calc({{height - (title ? 100 : 0)}}rpx - env(safe-area-inset-bottom));">
+      <slot></slot>
+    </view>
+  </view>
+</u-mask>
+

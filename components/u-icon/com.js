@@ -25,8 +25,8 @@ Component({
       value: null
     },
     size: {
-      type: Number,
-      value: 45
+      type: String,
+      value: '28'
     },
     color: {
       type: String,

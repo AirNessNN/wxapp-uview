@@ -1,0 +1,58 @@
+/* components/u-mask/com.wxss */
+@import "../base-style.wxss";
+
+@keyframes mask-show {
+  0%{
+    top: 100%;
+    background-color: #00000000;
+  }
+
+  1%{
+    top: 0;
+    background-color: #00000000;
+  }
+
+  100%{
+    top: 0;
+    background-color: #00000050
+  }
+}
+
+@keyframes mask-close {
+  0%{
+    top: 0%;
+    background-color: #00000050
+  }
+
+  99%{
+    top: 0%;
+    background-color: #00000000;
+  }
+
+  100%{
+    top: 100%;
+    background-color: #00000000;
+  }
+}
+
+.mask-show {
+  background-color: #00000000;
+  top: 100%;
+  animation-name: mask-show;
+  animation-fill-mode: forwards;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+}
+
+.mask-close {
+  background-color: #00000050;
+  top: 0;
+  animation-name: mask-close;
+  animation-fill-mode: forwards;
+  animation-duration: 0.3s;
+}
+
+.mask-init-close {
+  background-color: #00000000;
+  top: 100%;
+}

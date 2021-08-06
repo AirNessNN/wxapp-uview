@@ -1,4 +1,4 @@
 <!--components/u-card-content/com.wxml-->
-<view class="con">
+<view class="con {{spacing ? 'spacing':''}}">
   <slot></slot>
 </view>

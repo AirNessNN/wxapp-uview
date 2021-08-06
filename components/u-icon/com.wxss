@@ -1,2 +1,6 @@
 /* components/u-icon/com.wxss */
 @import "../base-style.wxss";
+
+.icon {
+  font-weight: normal;
+}

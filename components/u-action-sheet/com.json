@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "u-mask": "/components/u-mask/com",
+    "u-icon": "/components/u-icon/com",
+    "u-btn": "/components/u-button/com"
+  }
+}

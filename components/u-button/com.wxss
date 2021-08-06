@@ -3,6 +3,9 @@
 @import "../base-style.wxss";
 
 
+.con {
+  position: relative;
+}
 
 .mask {
   width: 30rpx;
@@ -21,6 +24,14 @@
   border-radius: 10rpx;
   font-size: var(--text-size-content);
   transition: all 0.3s linear;
+  position: relative;
+}
+
+.icon{
+  min-width: 70rpx;
+  padding: 0;
+  line-height: 70rpx;
+  text-align: center;
 }
 
 .btn-large {
@@ -44,7 +55,6 @@
 }
 
 .text {
-  color: var(--primary);
   background-color: unset;
 }
 
@@ -61,4 +71,16 @@
 
 .shadow {
   box-shadow: var(--shadow-btn);
+}
+
+
+.text-btn-bg {
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  transition: all 0.3s;
 }

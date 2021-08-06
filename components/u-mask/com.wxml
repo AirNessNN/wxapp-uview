@@ -1,0 +1,3 @@
+<!--components/u-mask/com.wxml-->
+<view catchtouchmove="null" class="mask max-screen {{show ? 'mask-show': inited ? 'mask-close':'mask-init-close'}}" bindtap="_tap"></view>
+<slot></slot>

@@ -1,5 +1,5 @@
 <!--components/u-card/com.wxml-->
 <!-- <view style="width:0rpx; height:{{spacing * 10}}rpx;"></view> -->
-<view class="v-card" style="margin-top: {{spacing ? 30:0}}rpx; {{style}}">
+<view class="v-card {{shadow ? '':'base'}}" style="margin-top: {{spacing ? 30:0}}rpx; {{style}}">
   <slot></slot>
 </view>
