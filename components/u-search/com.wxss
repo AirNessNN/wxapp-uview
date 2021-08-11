@@ -1,0 +1,84 @@
+/* components/u-search/com.wxss */
+
+@import "../base-style.wxss";
+
+.con {
+  width: 100%;
+  
+}
+
+.search-pop-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.search-con{
+  flex: 1;
+  background-color: var(--background);
+  height: 80rpx;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+  padding: 20rpx;
+  padding-right: 0;
+  position: relative;
+
+}
+
+.search-pop-view-top ,.search-pop-view-bottom {
+  z-index: var(--action-sheet-z-index);
+  width: 100%;
+  max-height: 0;
+  border-radius: 10rpx;
+  box-shadow: var(--shadow-card);
+  position: absolute;
+  left: 0;
+  bottom: 120%;
+  top: unset;
+  background-color: white;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.search-pop-view-bottom {
+  bottom: unset;
+  top: 120%;
+}
+
+.search-pop-view-top-show {
+  max-height: 40vh;
+  bottom: 120%;
+  transition: all 0.3s ease;
+}
+
+.search-pop-view-bottom-show {
+  max-height: 40vh;
+  top: 120%;
+  transition: all 0.3s ease;
+}
+
+
+.scarch-pop-view-item {
+  width: 100%;
+  line-height: 60rpx;
+  box-sizing: border-box;
+  padding: 20rpx;
+  background-color: white;
+  transition: all 0.3s linear;
+  color: var(--text-color-content);
+  font-size: var(--text-size-content);
+}
+
+.scarch-pop-view-item-hover{
+  background-color: var(--background-hover);
+  transition: background-color 0.3s linear;
+}
+
+.exp-panel, .exp-panel-show {
+  max-height: 0;
+  width: 100%;
+  overflow: hidden;
+  transition: max-height ease 0.5s;
+}

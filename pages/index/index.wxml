@@ -6,5 +6,6 @@
   <u-card-content spacing>
     <u-form-option name="表单组件" to="/pages/test/index" />
     <u-form-option name="ActionSheet" desc="弹出窗类型组件" to="/pages/page/actionSheet/index" />
+    <u-form-option name="搜索组合组件" desc="弹出窗类型组件" to="/pages/page/search/index" />
   </u-card-content>
 </u-card>

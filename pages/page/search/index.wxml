@@ -1,0 +1,68 @@
+<!--pages/page/search/index.wxml-->
+<u-card shadow="{{false}}">
+  <u-card-content>
+    <u-form-option name="基础搜索框" desc="只应用搜索"></u-form-option>
+    <u-search 
+      value="{{value}}"
+      bindinput="onInput1">
+      <view class="item">测试Item</view>
+      <view class="item">测试Item</view>
+      <view class="item">测试Item</view>
+      <view class="item">测试Item</view>
+      <view class="item">测试Item</view>
+      <view class="item">测试Item</view>
+    </u-search>
+
+    <u-form-option name="拓展Bar搜索框" desc=""></u-form-option>
+    <u-search 
+      value="{{value}}"
+      bindinput="onInput1">
+      <view class="flex justify-space-between align-center" slot="bar">
+        <u-btn small text color="#E6A23C">添加</u-btn>
+        <u-btn small text color="#E6A23C">清空</u-btn>
+      </view>
+      <view class="item">测试Item</view>
+      <view class="item">测试Item</view>
+      <view class="item">测试Item</view>
+      <view class="item">测试Item</view>
+      <view class="item">测试Item</view>
+      <view class="item">测试Item</view>
+    </u-search>
+
+    <u-form-option name="带拓展容器的搜索框" desc="使用搜索框内置的按钮事件触发打开拓展容器"></u-form-option>
+    <u-search 
+      bindinput="onInput1"
+      expand-height="400"  
+      bind-exp-btn-tap="onTap" 
+      expand-icon="icon-a-48-01" 
+      model:expandPanelShow="{{show}}">
+      <view class="item">测试Item</view>
+      <view class="item">测试Item</view>
+      <view class="item">测试Item</view>
+      <view class="item">测试Item</view>
+      <view class="item">测试Item</view>
+      <view class="item">测试Item</view>
+    </u-search>
+
+
+    <u-form-option name="搜索框展示搜索内容" desc="联动输入时间，模拟搜索结果弹窗，请输入内容来测试"></u-form-option>
+    <u-search 
+      bindinput="onInput2"
+      searchItems="{{items}}" 
+      expand-height="400"  
+      bind-exp-btn-tap="onTap2" 
+      expand-icon="icon-a-48-01" 
+      model:expandPanelShow="{{show2}}"
+      bind-search-item-tap="onItemTap">
+      <view class="item">测试Item</view>
+      <view class="item">测试Item</view>
+      <view class="item">测试Item</view>
+      <view class="item">测试Item</view>
+      <view class="item">测试Item</view>
+      <view class="item">测试Item</view>
+    </u-search>
+    <u-form-option name="搜索点击内容" desc="">{{clickItem}}</u-form-option>
+  </u-card-content>
+
+  
+</u-card>

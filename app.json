@@ -6,7 +6,8 @@
     "pages/page/button/index",
     "pages/page/actionSheet/index",
     "pages/page/form/index",
-    "pages/page/card/card"
+    "pages/page/card/card",
+    "pages/page/search/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

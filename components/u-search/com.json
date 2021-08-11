@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "u-icon": "/components/u-icon/com",
+    "u-btn": "/components/u-button/com"
+  }
+}

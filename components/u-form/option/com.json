@@ -1,4 +1,6 @@
 {
   "component": true,
-  "usingComponents": {}
+  "usingComponents": {
+    "u-icon": "/components/u-icon/com"
+  }
 }

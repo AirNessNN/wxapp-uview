@@ -1,0 +1,10 @@
+/* pages/page/search/index.wxss */
+
+.item {
+  width: 100%;
+  height: 150rpx;
+  background-color: lightblue;
+  margin-bottom: 10rpx;
+  line-height: 150rpx;
+  text-align: center;
+}

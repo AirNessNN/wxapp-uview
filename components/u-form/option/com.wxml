@@ -12,7 +12,7 @@
     <slot wx:if="{{!to}}"></slot>
     <view wx:else class="native">
       {{toDesc}}
-      <text class="iconfont icon-a-41-01" style="font-size: var(--text-size-content);"></text>
+      <u-icon value="icon-a-41-01" color="var(--text-color-content)"></u-icon>
     </view>
   </view>
   

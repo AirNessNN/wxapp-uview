@@ -1,0 +1,26 @@
+<!--components/u-search/com.wxml-->
+
+<view class="con">
+  <view class="search-con flex justify-space-between align-center mb-2">
+    <view class="search-pop-view-{{popViewDirection}} {{popViewShowed ? 'search-pop-view-' + popViewDirection + '-show':''}}">
+      <scroll-view scroll-y style="max-height: inherit;">
+        <view wx:for="{{searchItems}}" wx:key="unique" wx:for-item="item" wx:for-index="index" class="scarch-pop-view-item" hover-class="filter-hover" data-value="{{item}}" data-index="{{index}}" bindtap="_onSearchItemTap">{{item}}</view>
+      </scroll-view>
+    </view>
+    
+    <view style="flex:1" class="flex justify-start align-center pr-1">
+      <u-icon value="icon-search" size="32" color="var(--text-color-description)" style="padding-right:10rpx;"></u-icon>
+      <input cursor-spacing="20" bindfocus="_onInputFocus" bindblur="_onInputBlur" id="input" bindinput="_onInput" value="{{value}}" style="font-size:var(--text-size-content); width:100%; color: var(--text-color-content)" placeholder="{{placeholder}}" placeholder-style="color: var(--text-color-description);" type="text"/>
+    </view>
+    <u-btn wx:if="{{expandIcon}}" icon text color="#a3a3a3" style="height:80rpx; width:80rpx;" bindtap="_onExpBtnTap">
+      <u-icon value="{{expandIcon}}" size="32" color="var(--text-color-content)"></u-icon>
+    </u-btn>
+  </view>
+  <slot name="bar"></slot>
+  <view class="exp-panel" style="{{expandPanelShow ? 'max-height: ' + expandHeight + 'rpx;':'max-height: 0;'}} overflow: hidden;">
+    <scroll-view scroll-y style="max-height:{{expandHeight}}rpx;">
+      <slot></slot>
+    </scroll-view>
+  </view>
+  <view wx:if="{{popViewShowed}}" class="search-pop-mask"  bindtouchstart="_onMaskTap"></view>
+</view>

@@ -48,3 +48,4 @@ page{
 @import "./style/flex.wxss";
 @import "./style/style.wxss";
 @import "./style/icon.wxss";
+@import "./style/box.wxss";
