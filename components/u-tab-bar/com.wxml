@@ -1,0 +1,9 @@
+<!--components/u-tab-bar/com.wxml-->
+<!-- 这个组件不宜显示过多的选项卡 -->
+<view id="con" class="con flex justify-space-between align-center">
+  <view class="line" style="left: {{rect.left}}rpx; width: {{rect.width}}rpx; bottom: {{rect.bottom}}rpx;"></view>
+  <view class="bar-con flex justify-start align-center">
+    <slot></slot>
+  </view>
+  <u-btn icon color="var(--primary)"><u-icon value="icon-a-48-01"></u-icon></u-btn>
+</view>

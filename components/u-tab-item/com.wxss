@@ -1,0 +1,16 @@
+/* components/u-tab-item/com.wxss */
+@import "../base-style.wxss";
+
+.con, .con-select {
+  height: 80rpx;
+  padding: 0 20rpx;
+  font-size: var(--text-size-content);
+  color: var(--text-color-description);
+  transition: all 0.3s;
+}
+
+.con-select {
+  color: var(--text-color-title);
+  transition: all 0.3s;
+}
+

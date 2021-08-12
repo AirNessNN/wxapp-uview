@@ -1,0 +1,14 @@
+<!--pages/page/tab-bar/index.wxml-->
+<!--pages/page/search/index.wxml-->
+<u-card shadow="{{false}}">
+  <u-card-content>
+    <u-form-option name="基础TabBar:{{selection1}}" desc=""></u-form-option>
+    <u-tab-bar model:value="{{selection1}}" bind-change="valueChange">
+      <u-tab-item value="选项1"></u-tab-item>
+      <u-tab-item value="选项2"></u-tab-item>
+      <u-tab-item value="选项3"></u-tab-item>
+    </u-tab-bar>
+  </u-card-content>
+
+  
+</u-card>

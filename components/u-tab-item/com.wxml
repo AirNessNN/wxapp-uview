@@ -1,0 +1,4 @@
+<!--components/u-tab-item/com.wxml-->
+<view class="con{{select ? '-select':''}} flex justify-center align-center"  bindtap="_onTap" data-value="{{value}}">
+  <view id="tab-text">{{value}}</view>
+</view>

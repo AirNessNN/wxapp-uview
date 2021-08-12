@@ -1,5 +1,10 @@
 // components/u-icon/com.js
 Component({
+  relations: {
+    '../u-button/com': {
+      type: 'parent'
+    }
+  },
   /**
    * 组件的属性列表
    */

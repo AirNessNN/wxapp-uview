@@ -1,6 +1,6 @@
 <!--components/u-button/com.wxml-->
 <view 
-  wx:if="{{!text}}"
+  wx:if="{{!text && !icon}}"
   bindtouchstart="_tapStart"
   bindtouchend="_tapEnd"
   bindtap="{{disable ? '_none':'_tap'}}"
@@ -24,4 +24,17 @@
   <view wx:if="{{text || icon}}" class="text-btn-bg" style="background-color: {{(text || icon) && color && touched ? color:'unset'}}"></view>
   <slot wx:if="{{!loading}}"></slot>
 </view>
+
+<view 
+  wx:if="{{icon}}"
+  bindtouchstart="_tapStart"
+  bindtouchend="_tapEnd"
+  bindtap="{{disable ? '_none':'_tap'}}"
+  class="flex justify-center align-center icon{{large ? '-large':''}}{{xLarge ? '-x-large':''}}{{small ? '-small':''}} {{block? 'block':''}} {{shadow ? 'shadow':''}}  {{loading || disable ? 'filter-disable':''}}" 
+  style="color:{{color}}; border-radius:{{round ? borderRadius :'10'}}rpx; {{style}}">
+  <u-loading wx:if="{{loading}}" color="{{text? 'var(--primary)':'white'}}" large="{{large || xLarge}}"></u-loading>
+  <view wx:if="{{text || icon}}" class="text-btn-bg" style="background-color: {{(text || icon) && color && touched ? color:'unset'}}"></view>
+  <slot wx:if="{{!loading}}"></slot>
+</view>
+
 

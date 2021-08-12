@@ -7,13 +7,6 @@
   position: relative;
 }
 
-.mask {
-  width: 30rpx;
-  height: 30rpx;
-  border: 5rpx dotted;
-  border-radius: 50%;
-}
-
 .btn, .btn-large, .btn-small, .btn-x-large{
   min-width: 100rpx;
   width: max-content;
@@ -27,12 +20,7 @@
   position: relative;
 }
 
-.icon{
-  min-width: 70rpx;
-  padding: 0;
-  line-height: 70rpx;
-  text-align: center;
-}
+
 
 .btn-large {
   min-width: 130rpx;
@@ -55,6 +43,7 @@
 }
 
 .text {
+  max-width: unset;
   background-color: unset;
 }
 
@@ -83,4 +72,37 @@
   height: 100%;
   border-radius: inherit;
   transition: all 0.3s;
+}
+
+
+
+
+.icon, .icon-large, .icon-small, .icon-x-large{
+  width: 70rpx;
+  padding: 0;
+  line-height: 70rpx;
+  text-align: center;
+  transition: all 0.3s linear;
+  font-size: var(--text-size-content);
+  position: relative;
+}
+
+.icon-large {
+  width: 80rpx;
+  line-height: 80rpx;
+  height: 80rpx;
+  font-size: var(--text-size-title);
+}
+
+.icon-small {
+  font-size: var(--text-size-description);
+  width: 55rpx;
+  line-height: 55rpx;
+}
+
+.icon-x-large {
+  font-size: var(--text-size-title);
+  width: 100rpx;
+  line-height: 100rpx;
+  height: 100rpx;
 }

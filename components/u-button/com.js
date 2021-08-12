@@ -1,5 +1,26 @@
 // components/u-button/com.js
 Component({
+  relations: {
+    '../u-icon/com': {
+      type: 'child',
+      linked: function (target) {
+        this.data.iconComponent = target
+        if (!this.data.icon && !this.data.text) {
+          target.setData({
+            color: 'white',
+            large: this.data.large,
+            xLarge: this.data.xLarge
+          })
+        } else {
+          target.setData({
+            color: this.data.color,
+            large: this.data.large,
+            xLarge: this.data.xLarge
+          })
+        }
+      }
+    } 
+  },
   /**
    * 组件的属性列表
    */
@@ -83,7 +104,8 @@ Component({
    */
   data: {
     borderRadius: 35,
-    touched: false
+    touched: false,
+    iconComponent: null,
   },
 
   /**
